@@ -1,22 +1,21 @@
-# 📚 Itsriober School Management System - Documentation Website
+#  Itsriober School Management System - Documentation Website
 
-## 🌐 Enhanced Web Documentation Interface
+##  Enhanced Web Documentation Interface
 
 This directory contains a fully-featured, interactive web documentation interface for the Itsriober School Management System. The documentation website provides an enhanced reading experience with advanced features.
 
-### ✨ Features
+###  Features
+- **Modern UI/UX**: Clean, professional design with dark/light theme support
+- **Advanced Search**: Full-text search across all documentation with highlighting
+- **Responsive Design**: Optimized for desktop, tablet, and mobile devices
+- **Smart Navigation**: Sidebar navigation with progress tracking
+- **Table of Contents**: Auto-generated TOC for easy navigation
+- **Print Support**: Print-friendly layouts for offline reading
+- **Keyboard Shortcuts**: Quick access with keyboard shortcuts
+- **Deep Linking**: Direct links to specific sections
+- **Code Features**: Syntax highlighting and copy-to-clipboard functionality
 
-- **🎨 Modern UI/UX**: Clean, professional design with dark/light theme support
-- **🔍 Advanced Search**: Full-text search across all documentation with highlighting
-- **📱 Responsive Design**: Optimized for desktop, tablet, and mobile devices
-- **🧭 Smart Navigation**: Sidebar navigation with progress tracking
-- **📖 Table of Contents**: Auto-generated TOC for easy navigation
-- **💾 Print Support**: Print-friendly layouts for offline reading
-- **⌨️ Keyboard Shortcuts**: Quick access with keyboard shortcuts
-- **🔗 Deep Linking**: Direct links to specific sections
-- **📋 Code Features**: Syntax highlighting and copy-to-clipboard functionality
-
-### 🚀 Quick Start
+###  Quick Start
 
 1. **Open the Documentation**:
    ```bash
@@ -46,7 +45,7 @@ This directory contains a fully-featured, interactive web documentation interfac
    - Open your browser to `http://localhost:8080` (if using a server)
    - Or directly open `index.html` in your browser
 
-### 📁 File Structure
+###  File Structure
 
 ```
 docs/
@@ -62,7 +61,7 @@ docs/
 └── README.md              # This file
 ```
 
-### 🎨 Customization
+###  Customization
 
 #### Adding Your Logo
 1. Replace `assets/images/logo.png` with your school's logo (40x40px recommended)
@@ -87,14 +86,14 @@ The documentation automatically loads content from the parent directory markdown
 - `../DEVELOPMENT_GUIDE.md` → Development Guide
 - And so on...
 
-### ⌨️ Keyboard Shortcuts
+###  Keyboard Shortcuts
 
 - **Ctrl/Cmd + K**: Focus search
 - **Ctrl/Cmd + P**: Print current page
 - **Escape**: Close modals
 - **Arrow Keys**: Navigate search results
 
-### 🔍 Search Features
+###  Search Features
 
 - **Full-text search** across all documentation
 - **Smart highlighting** of search terms
@@ -102,20 +101,20 @@ The documentation automatically loads content from the parent directory markdown
 - **Quick navigation** to search results
 - **Real-time search** as you type
 
-### 📱 Mobile Experience
+###  Mobile Experience
 
 - **Responsive sidebar** that collapses on mobile
 - **Touch-friendly navigation**
 - **Optimized typography** for small screens
 - **Swipe gestures** support
 
-### 🎯 Browser Support
+###  Browser Support
 
 - **Modern Browsers**: Chrome 80+, Firefox 75+, Safari 13+, Edge 80+
 - **Features**: ES6+, CSS Grid, Flexbox, CSS Variables
 - **Fallbacks**: Graceful degradation for older browsers
 
-### 🔧 Technical Details
+###  Technical Details
 
 #### Dependencies
 - **Marked.js**: Markdown to HTML conversion
@@ -129,7 +128,7 @@ The documentation automatically loads content from the parent directory markdown
 - **Debounced search** to prevent excessive API calls
 - **Optimized animations** with CSS transforms
 
-### 🐛 Troubleshooting
+###  Troubleshooting
 
 #### Common Issues
 
@@ -159,7 +158,7 @@ This will:
 - Display performance metrics
 - Enable development helpers
 
-### 🚀 Deployment
+###  Deployment
 
 #### Static Hosting
 The documentation can be deployed to any static hosting service:
@@ -175,7 +174,7 @@ The documentation can be deployed to any static hosting service:
 3. Configure SSL certificate
 4. Test all functionality
 
-### 📈 Analytics Integration
+###  Analytics Integration
 
 To add analytics, insert your tracking code in `index.html`:
 
@@ -190,7 +189,7 @@ To add analytics, insert your tracking code in `index.html`:
 </script>
 ```
 
-### 🤝 Contributing
+###  Contributing
 
 To contribute to the documentation website:
 
@@ -199,12 +198,12 @@ To contribute to the documentation website:
 3. **Test thoroughly** across different browsers
 4. **Submit a pull request** with detailed description
 
-### 📄 License
+###  License
 
 This documentation website is part of the Itsriober School Management System project and follows the same license terms.
 
 ---
 
-**🎉 Enjoy your enhanced documentation experience!**
+** Enjoy your enhanced documentation experience!**
 
 For questions or issues, please refer to the main project documentation or create an issue in the repository.
