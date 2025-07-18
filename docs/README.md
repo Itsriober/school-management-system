@@ -1,4 +1,15 @@
+
 #  Itsriober School Management System - Documentation Website
+
+---
+**Milestone Progress:**
+
+- ✅ **Milestone 1: Project Initialization and Setup – Completed (July 18, 2025)**
+  - Backend and frontend initialized
+  - All required configs and dependencies set up
+  - Project pushed to GitHub
+  - Ready for next milestone
+---
 
 ##  Enhanced Web Documentation Interface
 
@@ -188,6 +199,7 @@ To add analytics, insert your tracking code in `index.html`:
   gtag('config', 'GA_MEASUREMENT_ID');
 </script>
 ```
+
 
 ###  Contributing
 
