@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itsriober School Management System - Documentation</title>
+    <link rel="stylesheet" href="css/documentation.css">
+    <!-- <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico"> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <meta name="description" content="Comprehensive documentation for Itsriober School Management System - Full Stack Development Guide">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-spinner">
+            <div class="spinner"></div>
+            <p>Loading Documentation...</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-section">
+                <svg class="logo" width="50" height="50" viewBox="0 0 50 52" xmlns="http://www.w3.org/2000/svg">
+                    <title>Laravel</title>
+                    <path d="m49.626 11.564a.809.809 0 0 1 .028.209v10.972a.8.8 0 0 1-.402.694l-9.209 5.302v10.509c0 .286-.152.55-.4.694L20.42 51.01c-.044.025-.092.041-.14.058-.018.006-.035.017-.054.022a.805.805 0 0 1-.41 0c-.022-.006-.042-.018-.063-.026-.044-.016-.09-.03-.132-.054L.402 39.944A.801.801 0 0 1 0 39.25V6.334c0-.072.01-.142.028-.21.006-.023.02-.044.028-.067.015-.042.029-.085.051-.124.015-.026.037-.047.055-.071.023-.032.044-.065.071-.093.023-.023.053-.04.079-.06.029-.024.055-.050.088-.069h.001l9.61-5.533a.802.802 0 0 1 .8 0l9.61 5.533h.002c.032.02.059.045.088.068.026.02.055.038.078.06.028.029.048.062.072.094.017.024.04.045.054.071.023.04.036.082.052.124.008.023.022.044.028.068a.809.809 0 0 1 .028.209v20.559l8.008-4.611v-10.51c0-.07.01-.141.028-.208.007-.024.02-.045.028-.068.016-.042.03-.085.052-.124.015-.026.037-.047.054-.071.024-.032.044-.065.072-.093.023-.023.052-.04.078-.06.03-.024.056-.05.088-.069l9.611-5.533a.801.801 0 0 1 .8 0l9.61 5.533c.034.02.06.045.09.068.025.02.054.038.077.06.028.029.048.062.072.094.018.024.04.045.054.071.023.04.036.082.052.124.009.023.022.044.028.068zm-1.574 10.718v-9.124l-3.363 1.936-4.646 2.675v9.124l8.01-4.611zm-9.61 16.505v-9.13l-4.57 2.61-13.05 7.448v9.216l17.62-10.144zM1.602 7.719v31.068L19.22 48.93v-9.214l-9.204-5.209-.003-.002-.004-.002c-.031-.018-.057-.044-.086-.066-.025-.02-.054-.036-.076-.058l-.002-.003c-.026-.025-.044-.056-.066-.084-.02-.027-.044-.05-.06-.078l-.001-.003c-.018-.03-.029-.066-.042-.1-.013-.03-.03-.058-.038-.09v-.001c-.01-.038-.012-.078-.016-.117-.004-.03-.012-.06-.012-.09v-.002-21.481L4.965 9.654 1.602 7.72zm8.81-5.994L2.405 6.334l8.005 4.609 8.006-4.61-8.005-4.608zm4.164 28.764l4.645-2.674V7.719l-3.363 1.936-4.646 2.675v20.096l3.364-1.937zM39.243 7.164l-8.006 4.609 8.006 4.609 8.005-4.61-8.005-4.608zm-.801 10.605l-4.646-2.675-3.363-1.936v9.124l4.645 2.674 3.364 1.937v-9.124zM20.02 38.33l11.743-6.704 5.87-3.35-8-4.606-9.211 5.303-8.395 4.833 7.993 4.524z" fill="#FF2D20"/>
+                </svg>
+                <div class="title-section">
+                    <h1>Itsriober School Management System</h1>
+                    <p>Complete Development Documentation</p>
+                </div>
+            </div>
+            <div class="header-controls">
+                <div class="search-container">
+                    <input type="text" id="global-search" placeholder="Search documentation..." class="search-input">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+                <button id="theme-toggle" class="theme-toggle" title="Toggle Dark/Light Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button id="print-btn" class="print-btn" title="Print Current Page">
+                    <i class="fas fa-print"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h3>Documentation</h3>
+                <button id="sidebar-toggle" class="sidebar-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            
+            <div class="nav-section">
+                <div class="nav-item active" data-page="overview" data-tooltip="Project Overview">
+                    <i class="fas fa-home"></i>
+                    <span>Project Overview</span>
+                </div>
+                <div class="nav-item" data-page="quick-start" data-tooltip="Quick Start Guide">
+                    <i class="fas fa-rocket"></i>
+                    <span>Quick Start Guide</span>
+                </div>
+                <div class="nav-item" data-page="development" data-tooltip="Development Guide">
+                    <i class="fas fa-code"></i>
+                    <span>Development Guide</span>
+                </div>
+                <div class="nav-item" data-page="milestones" data-tooltip="Milestones">
+                    <i class="fas fa-tasks"></i>
+                    <span>Milestones</span>
+                </div>
+                <div class="nav-item" data-page="features" data-tooltip="Feature Specifications">
+                    <i class="fas fa-list-alt"></i>
+                    <span>Feature Specifications</span>
+                </div>
+                <div class="nav-item" data-page="api" data-tooltip="API Documentation">
+                    <i class="fas fa-plug"></i>
+                    <span>API Documentation</span>
+                </div>
+                <div class="nav-item" data-page="testing" data-tooltip="Testing Guide">
+                    <i class="fas fa-vial"></i>
+                    <span>Testing Guide</span>
+                </div>
+                <div class="nav-item" data-page="deployment" data-tooltip="Deployment Guide">
+                    <i class="fas fa-server"></i>
+                    <span>Deployment Guide</span>
+                </div>
+                <div class="nav-item" data-page="structure" data-tooltip="Project Structure">
+                    <i class="fas fa-sitemap"></i>
+                    <span>Project Structure</span>
+                </div>
+            </div>
+
+            <div class="nav-section">
+                <h4>Quick Links</h4>
+                <div class="quick-links">
+                    <a href="#milestone-1" class="quick-link">
+                        <i class="fas fa-play"></i>
+                        Start Development
+                    </a>
+                    <a href="#api-endpoints" class="quick-link">
+                        <i class="fas fa-code"></i>
+                        API Reference
+                    </a>
+                    <a href="#deployment-checklist" class="quick-link">
+                        <i class="fas fa-check-circle"></i>
+                        Deploy to Production
+                    </a>
+                </div>
+            </div>
+
+            <div class="progress-section">
+                <h4>Development Progress</h4>
+                <div class="progress-tracker">
+                    <div class="progress-item">
+                        <span>Foundation</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div class="progress-item">
+                        <span>Authentication</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div class="progress-item">
+                        <span>Core Features</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 0%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main class="content" id="content">
+            <!-- Breadcrumb -->
+            <div class="breadcrumb" id="breadcrumb">
+                <span class="breadcrumb-item active">Project Overview</span>
+            </div>
+
+            <!-- Content Container -->
+            <div class="content-container" id="content-container">
+                <!-- Default Overview Content -->
+                <div class="page-content active" id="overview-content">
+                    <div class="hero-section">
+                        <h1>Itsriober School Management System</h1>
+                        <p class="hero-subtitle">Complete Full-Stack Development Documentation</p>
+                        <div class="hero-stats">
+                            <div class="stat-card">
+                                <div class="stat-number">10</div>
+                                <div class="stat-label">Documentation Guides</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-number">5</div>
+                                <div class="stat-label">User Roles</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-number">10</div>
+                                <div class="stat-label">Development Milestones</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="overview-grid">
+                        <div class="overview-card" data-navigate="quick-start">
+                            <div class="card-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <h3>Quick Start Guide</h3>
+                            <p>Get up and running with the development environment in minutes. Step-by-step setup instructions for both backend and frontend.</p>
+                            <div class="card-footer">
+                                <span class="difficulty easy">Beginner Friendly</span>
+                                <span class="time">30 min</span>
+                            </div>
+                        </div>
+
+                        <div class="overview-card" data-navigate="development">
+                            <div class="card-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3>Development Guide</h3>
+                            <p>Comprehensive development roadmap with architecture overview, coding standards, and best practices.</p>
+                            <div class="card-footer">
+                                <span class="difficulty intermediate">Intermediate</span>
+                                <span class="time">2 hours</span>
+                            </div>
+                        </div>
+
+                        <div class="overview-card" data-navigate="milestones">
+                            <div class="card-icon">
+                                <i class="fas fa-tasks"></i>
+                            </div>
+                            <h3>Development Milestones</h3>
+                            <p>Detailed milestone breakdown with testable deliverables. Each milestone is independently functional.</p>
+                            <div class="card-footer">
+                                <span class="difficulty intermediate">Project Management</span>
+                                <span class="time">36-49 days</span>
+                            </div>
+                        </div>
+
+                        <div class="overview-card" data-navigate="features">
+                            <div class="card-icon">
+                                <i class="fas fa-list-alt"></i>
+                            </div>
+                            <h3>Feature Specifications</h3>
+                            <p>Detailed feature specifications for all 5 user roles with UI/UX requirements and business logic.</p>
+                            <div class="card-footer">
+                                <span class="difficulty advanced">Comprehensive</span>
+                                <span class="time">1 hour</span>
+                            </div>
+                        </div>
+
+                        <div class="overview-card" data-navigate="api">
+                            <div class="card-icon">
+                                <i class="fas fa-plug"></i>
+                            </div>
+                            <h3>API Documentation</h3>
+                            <p>Complete API reference with examples, authentication, and testing procedures for all endpoints.</p>
+                            <div class="card-footer">
+                                <span class="difficulty advanced">Technical</span>
+                                <span class="time">Reference</span>
+                            </div>
+                        </div>
+
+                        <div class="overview-card" data-navigate="deployment">
+                            <div class="card-icon">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <h3>Deployment Guide</h3>
+                            <p>Production deployment procedures with server setup, security configurations, and maintenance.</p>
+                            <div class="card-footer">
+                                <span class="difficulty expert">DevOps</span>
+                                <span class="time">4-6 hours</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tech-stack-section">
+                        <h2>Technology Stack</h2>
+                        <div class="tech-grid">
+                            <div class="tech-item">
+                                <div class="tech-icon backend">
+                                    <i class="fab fa-laravel"></i>
+                                </div>
+                                <h4>Laravel 10+</h4>
+                                <p>API Backend with Sanctum</p>
+                            </div>
+                            <div class="tech-item">
+                                <div class="tech-icon frontend">
+                                    <i class="fab fa-react"></i>
+                                </div>
+                                <h4>React 18+</h4>
+                                <p>Frontend with Vite & Tailwind</p>
+                            </div>
+                            <div class="tech-item">
+                                <div class="tech-icon database">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                                <h4>MySQL 8.0+</h4>
+                                <p>Primary Database</p>
+                            </div>
+                            <div class="tech-item">
+                                <div class="tech-icon cache">
+                                    <i class="fas fa-memory"></i>
+                                </div>
+                                <h4>Redis</h4>
+                                <p>Caching & Sessions</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="user-roles-section">
+                        <h2>User Roles & Dashboards</h2>
+                        <div class="roles-grid">
+                            <div class="role-card admin">
+                                <div class="role-icon">
+                                    <i class="fas fa-crown"></i>
+                                </div>
+                                <h4>Admin Dashboard</h4>
+                                <p>Complete system control, user management, and reporting</p>
+                                <ul>
+                                    <li>User & Role Management</li>
+                                    <li>Academic Structure</li>
+                                    <li>Financial Oversight</li>
+                                    <li>System Analytics</li>
+                                </ul>
+                            </div>
+                            <div class="role-card teacher">
+                                <div class="role-icon">
+                                    <i class="fas fa-chalkboard-teacher"></i>
+                                </div>
+                                <h4>Teacher Dashboard</h4>
+                                <p>Academic management and student interaction</p>
+                                <ul>
+                                    <li>Class Management</li>
+                                    <li>Attendance Tracking</li>
+                                    <li>Grade Management</li>
+                                    <li>Parent Communication</li>
+                                </ul>
+                            </div>
+                            <div class="role-card parent">
+                                <div class="role-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <h4>Parent Dashboard</h4>
+                                <p>Monitor child's academic progress</p>
+                                <ul>
+                                    <li>Child's Progress</li>
+                                    <li>Attendance Monitoring</li>
+                                    <li>Fee Management</li>
+                                    <li>Teacher Communication</li>
+                                </ul>
+                            </div>
+                            <div class="role-card student">
+                                <div class="role-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <h4>Student Dashboard</h4>
+                                <p>Access academic information and resources</p>
+                                <ul>
+                                    <li>Personal Profile</li>
+                                    <li>Grades & Assignments</li>
+                                    <li>Class Schedule</li>
+                                    <li>Announcements</li>
+                                </ul>
+                            </div>
+                            <div class="role-card staff">
+                                <div class="role-icon">
+                                    <i class="fas fa-hard-hat"></i>
+                                </div>
+                                <h4>Staff Dashboard</h4>
+                                <p>Operational management and communication</p>
+                                <ul>
+                                    <li>Attendance Tracking</li>
+                                    <li>Task Management</li>
+                                    <li>Leave Requests</li>
+                                    <li>Payroll Information</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Other page contents will be loaded dynamically -->
+                <div class="page-content" id="quick-start-content" style="display: none;">
+                    <div class="loading-placeholder">
+                        <i class="fas fa-spinner fa-spin"></i>
+                        <p>Loading Quick Start Guide...</p>
+                    </div>
+                </div>
+
+                <div class="page-content" id="development-content" style="display: none;">
+                    <div class="loading-placeholder">
+                        <i class="fas fa-spinner fa-spin"></i>
+                        <p>Loading Development Guide...</p>
+                    </div>
+                </div>
+
+                <div class="page-content" id="milestones-content" style="display: none;">
+                    <div class="loading-placeholder">
+                        <i class="fas fa-spinner fa-spin"></i>
+                        <p>Loading Milestones...</p>
+                    </div>
+                </div>
+
+                <div class="page-content" id="features-content" style="display: none;">
+                    <div class="loading-placeholder">
+                        <i class="fas fa-spinner fa-spin"></i>
+                        <p>Loading Feature Specifications...</p>
+                    </div>
+                </div>
+
+                <div class="page-content" id="api-content" style="display: none;">
+                    <div class="loading-placeholder">
+                        <i class="fas fa-spinner fa-spin"></i>
+                        <p>Loading API Documentation...</p>
+                    </div>
+                </div>
+
+                <div class="page-content" id="testing-content" style="display: none;">
+                    <div class="loading-placeholder">
+                        <i class="fas fa-spinner fa-spin"></i>
+                        <p>Loading Testing Guide...</p>
+                    </div>
+                </div>
+
+                <div class="page-content" id="deployment-content" style="display: none;">
+                    <div class="loading-placeholder">
+                        <i class="fas fa-spinner fa-spin"></i>
+                        <p>Loading Deployment Guide...</p>
+                    </div>
+                </div>
+
+                <div class="page-content" id="structure-content" style="display: none;">
+                    <div class="loading-placeholder">
+                        <i class="fas fa-spinner fa-spin"></i>
+                        <p>Loading Project Structure...</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Search Results Modal -->
+    <div id="search-modal" class="search-modal">
+        <div class="search-modal-content">
+            <div class="search-modal-header">
+                <h3>Search Results</h3>
+                <button id="close-search" class="close-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="search-results" id="search-results">
+                <!-- Search results will be populated here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Table of Contents -->
+    <div class="toc-container" id="toc-container">
+        <div class="toc-header">
+            <h4>Table of Contents</h4>
+            <button id="toc-toggle" class="toc-toggle">
+                <i class="fas fa-list"></i>
+            </button>
+        </div>
+        <div class="toc-content" id="toc-content">
+            <!-- TOC will be generated dynamically -->
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.2/marked.min.js"></script>
+    <script src="js/documentation-fixed.js"></script>
+</body>
+</html>
